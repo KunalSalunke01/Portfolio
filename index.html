@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kunal-Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,800;0,900;1,100;1,200;1,300;1,400;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(2, 2, 73);
+            color: aliceblue;
+            font-family: 'Poppins', sans-serif;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 12vh;
+            background-color:  rgba(1, 1, 54, 0.75);
+        }
+        nav ul{
+            display: flex;
+            justify-content: space-evenly;
+            list-style: none;
+        }
+        nav ul li{
+            padding: 10%;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: whitesmoke;
+        }
+        nav ul li a:hover{
+            font-size: 1.02rem ;
+            color: rgba(14, 129, 236, 0.805);
+        }
+        .left{
+            font-weight: 600;
+            font-size: 1.7rem ;
+        }
+        .section{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 25px;
+        }
+        .leftsection{
+            width: 50%;
+            font-size: 3rem;
+            margin: 4% 0;
+            padding: 2%;
+        }
+        .rightsection{
+            width: 50%;
+            margin: 2%;
+        }
+        .highlight{
+            color: blueviolet;
+        }
+        #element{
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">My Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="section">
+            <div class="leftsection">
+                Hi..<br> My self <SPan class="highlight">Kunal Salunke</SPan>  <div>I am a Developer</div>
+                <!-- Element to contain animated typing -->
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="bg.png" alt="bg photo" width="100%">
+            </div>
+        </div>
+    </main>
+
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+        strings: ['<i>Web Developer</i>', 'Java','Python','C++'],
+        typeSpeed: 50,
+        });
+    </script>
+
+</body>
+</html> 
